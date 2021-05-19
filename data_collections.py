@@ -1,15 +1,3 @@
-# Python Data Collections 
-
-- Lists
-- Dictionary
-- Tuples
-- Sets
-
-The difference between a List and a Tuple is that Lists are mutable and Tuples are immutable (you cannot change or update them)
-
-## Lists 
-
-```python
 # Lists
 # Syntax [""]
 # CRUD: CREATE READ UPDATE AND DELETE
@@ -41,5 +29,3 @@ print(shopping_list)
 
 shopping_list.pop() # removed the last item from the list
 print(shopping_list)
-
-```
