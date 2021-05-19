@@ -9,6 +9,7 @@ The difference between a List and a Tuple is that Lists are mutable and Tuples a
 
 ## Lists 
 
+
 ```python
 # Lists
 # Syntax [""]
@@ -42,4 +43,22 @@ print(shopping_list)
 shopping_list.pop() # removed the last item from the list
 print(shopping_list)
 
+```
+
+## Tuples 
+
+```python
+# Tuples are IMMUTABLE
+
+# Why do we need tuples? What sort of data types never change?
+# Something we don't want the user to change
+# Something like DOB, Date of Birth, Date of Death
+
+essentials = ("Eggs", "Milk", "Bread")
+#               0       1        2
+print(essentials)
+print(type(essentials))
+
+# replace bread with Yoghurt
+essentials(2) = "Yoghurt"
 ```
