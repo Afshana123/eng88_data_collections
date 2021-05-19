@@ -46,3 +46,4 @@ print(type(essentials))
 # replace bread with Yoghurt
 essentials(2) = "Yoghurt"
 
+# output - you cannot change (immutable)
