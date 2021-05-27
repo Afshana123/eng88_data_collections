@@ -1,33 +1,37 @@
-# What are dictionaries?
-# They are structured as KEY = VALUE
+# Dictionaries
+# ----------------------------------------------------------------------------------------------------------------------
+# They are structured as KEY : VALUE
 # VALUE could be string, int, list
 # Syntax {}
 
-# student_1 = {
-#     "Name" : "Afshana",
-# #   "Key"  : "Value"
-#     "Stream" : "Cyber Security",
-#     "Completed_Lessons" : 3,
-#     "Complete_Lessons" : ["Variables", "Operators", "Data_Collections"] # List
-# }
-#
-# print(student_1)
-# # We can fetch the values with the keys
-# print(student_1["Name"])
-# print(student_1["Stream"])
-# print(student_1["Complete_Lessons"])
-#
-# # Display only 'Operators' from the list inside the dictonary
-# print(student_1["Complete_Lessons"][1]) # name of the dictionary followed by the key then the index of the value you want to retrieve
-#
-# # You can print all the keys as follows
-# print(student_1.keys())
-#
-# # You can print all the values as follows
-# print(student_1.values())
+student_1 = {
+    "Name" : "Afshana",
+#   "Key"  : "Value"
+    "Stream" : "Cyber Security",
+    "Completed_Lessons" : 3,
+    "Complete_Lessons" : ["Variables", "Operators", "Data_Collections"] # List
+}
 
-# Sets are data collection but different is that they are unordered
-# Syntax name = {}
+print(student_1)
+
+# We can fetch the values with the keys
+print(student_1["Name"])
+print(student_1["Stream"])
+print(student_1["Complete_Lessons"])
+
+# Display only 'Operators' from the list inside the dictionary
+print(student_1["Complete_Lessons"][1]) # name of the dictionary followed by the key then the index of the value you want to retrieve
+
+# You can print all the keys as follows
+print(student_1.keys())
+
+# You can print all the values as follows
+print(student_1.values())
+
+# Sets
+# ----------------------------------------------------------------------------------------------------------------------
+# Sets are part of data collections but the difference is that they are unordered
+# Syntax {}
 # You can use sets if you are not worried about the organisation or order of how it is stored
 
 car_parts = {"Wheels", "Doors", "Engine"}

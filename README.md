@@ -12,6 +12,7 @@ The difference between a List and a Tuple is that Lists are mutable and Tuples a
 
 ```python
 # Lists
+# Lists are MUTABLE 
 # Syntax [""]
 # CRUD: CREATE READ UPDATE AND DELETE
 
@@ -28,7 +29,7 @@ print(shopping_list[1])
 # If we need to replace something from the list
 
 shopping_list[5] = "Oats"
-print(shopping_list)
+print(shopping_list) # notice that it adds it add the end of the list
 
 # If we need to add something
 
@@ -51,24 +52,23 @@ print(shopping_list)
 # Tuples are IMMUTABLE
 
 # Why do we need tuples? What sort of data types never change?
-# Something we don't want the user to change
-# Something like DOB, Date of Birth, Date of Death
+# - Something we don't want the user to change
+# - For example, like DOB, Date of Birth, Date of Death
 
 essentials = ("Eggs", "Milk", "Bread")
 #               0       1        2
 print(essentials)
 print(type(essentials))
 
-# replace bread with Yoghurt
-essentials(2) = "Yoghurt"
+# try replacing Bread with Yoghurt and see what happens
+essentials[2] = "Yoghurt" # the output will show a TypeError as tuples are immutable
 ```
 
 ## Dictionaries 
 
 ```python
-# What are dictionaries?
-# They are structured as KEY = VALUE
-# VALUE could be string, int, list
+# They are structured as KEY : VALUE
+# VALUE could be a string, int, list
 # Syntax {}
 
 student_1 = {
@@ -80,13 +80,14 @@ student_1 = {
 }
 
 print(student_1)
+
 # We can fetch the values with the keys
 print(student_1["Name"])
 print(student_1["Stream"])
 print(student_1["Complete_Lessons"])
 
-# Display only 'OPERATORS' FROM THE LIST INSIDE DICTIONARY
-print(student_1["Complete_Lessons"][1])
+# Display only 'Operators' from the list inside the dictionary
+print(student_1["Complete_Lessons"][1]) # name of the dictionary followed by the key then the index of the value you want to retrieve
 
 # You can print all the keys as follows
 print(student_1.keys())
@@ -98,8 +99,8 @@ print(student_1.values())
 ## Sets 
 
 ```python
-# Sets are data collection but different is that they are unordered
-# Syntax name = {}
+# Sets are part of data collections but the difference is that they are unordered
+# Syntax {}
 # You can use sets if you are not worried about the organisation or order of how it is stored
 
 car_parts = {"Wheels", "Doors", "Engine"}
